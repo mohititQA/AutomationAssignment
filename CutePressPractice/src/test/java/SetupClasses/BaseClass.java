@@ -31,6 +31,7 @@ public class BaseClass {
 	public Properties configProp;
 	public static Logger logger;
 	public String  url;
+	public String newURL;
 
 	
 	@BeforeClass
@@ -43,6 +44,7 @@ public class BaseClass {
 		PropertyConfigurator.configure("log4j.properties");
 		logger.setLevel(Level.DEBUG);
 		url = configProp.getProperty("url");
+		newURL = configProp.getProperty("newUrl");
 		String br = configProp.getProperty("browser");
 		if (br.equals("Chrome"))
 		{

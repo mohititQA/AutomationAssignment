@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="9" passed="6">
+<testng-results skipped="0" failed="6" ignored="0" total="9" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="68285" started-at="2019-12-14T13:08:21Z" finished-at="2019-12-14T13:09:29Z">
+  <suite name="Suite" duration-ms="70420" started-at="2019-12-17T10:17:50Z" finished-at="2019-12-17T10:19:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="68285" started-at="2019-12-14T13:08:21Z" finished-at="2019-12-14T13:09:29Z">
+    <test name="Test" duration-ms="70420" started-at="2019-12-17T10:17:50Z" finished-at="2019-12-17T10:19:00Z">
       <class name="TestSteps.TestCase1">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="Setup" is-config="true" duration-ms="4369" started-at="2019-12-14T13:08:21Z" finished-at="2019-12-14T13:08:25Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestSteps.TestCase1@5442a311]" name="Setup" is-config="true" duration-ms="3672" started-at="2019-12-17T10:17:50Z" finished-at="2019-12-17T10:17:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="openURL()[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="openURL" duration-ms="15193" started-at="2019-12-14T13:08:25Z" finished-at="2019-12-14T13:08:40Z">
+        <test-method status="PASS" signature="openURL()[pri:0, instance:TestSteps.TestCase1@5442a311]" name="openURL" duration-ms="16531" started-at="2019-12-17T10:17:53Z" finished-at="2019-12-17T10:18:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURL -->
-        <test-method status="PASS" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="SearchResult" duration-ms="5543" started-at="2019-12-14T13:08:43Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-14T13:08:48Z">
+        <test-method status="PASS" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@5442a311]" name="SearchResult" duration-ms="6185" started-at="2019-12-17T10:18:13Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-17T10:18:19Z">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchResult -->
-        <test-method status="PASS" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="SearchResult" duration-ms="6078" started-at="2019-12-14T13:08:48Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-14T13:08:55Z">
+        <test-method status="FAIL" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@5442a311]" name="SearchResult" duration-ms="5680" started-at="2019-12-17T10:18:19Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-17T10:18:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[74533]]>
+                <![CDATA[70286]]>
               </value>
             </param>
             <param index="1">
@@ -60,14 +60,83 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[$18]]>
+                <![CDATA[฿279.00]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='product-name']/a"}
+  (Session info: chrome=78.0.3904.87)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PF19GKQ2', ip: '172.30.202.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d71f9ee56a9e0c9c9934f346190bdef7
+*** Element info: {Using=xpath, value=//h2[@class='product-name']/a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='product-name']/a"}
+  (Session info: chrome=78.0.3904.87)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PF19GKQ2', ip: '172.30.202.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d71f9ee56a9e0c9c9934f346190bdef7
+*** Element info: {Using=xpath, value=//h2[@class='product-name']/a}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.getText(Unknown Source)
+at pageObjects.searchPage.getProductName(searchPage.java:60)
+at TestSteps.TestCase1.SearchResult(TestCase1.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchResult -->
-        <test-method status="PASS" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="SearchResult" duration-ms="5634" started-at="2019-12-14T13:08:55Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-14T13:09:00Z">
+        <test-method status="FAIL" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@5442a311]" name="SearchResult" duration-ms="5880" started-at="2019-12-17T10:18:25Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-17T10:18:31Z">
           <params>
             <param index="0">
               <value>
@@ -86,14 +155,55 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[$8]]>
+                <![CDATA[฿129.00]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [฿129.00] but found [$8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [฿129.00] but found [$8]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at TestSteps.TestCase1.SearchResult(TestCase1.java:61)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchResult -->
-        <test-method status="PASS" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="SearchResult" duration-ms="5676" started-at="2019-12-14T13:09:00Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-14T13:09:06Z">
+        <test-method status="FAIL" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@5442a311]" name="SearchResult" duration-ms="5829" started-at="2019-12-17T10:18:31Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-17T10:18:36Z">
           <params>
             <param index="0">
               <value>
@@ -112,14 +222,55 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[$5]]>
+                <![CDATA[฿79.00]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [฿79.00] but found [$5]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [฿79.00] but found [$5]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at TestSteps.TestCase1.SearchResult(TestCase1.java:61)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchResult -->
-        <test-method status="FAIL" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="SearchResult" duration-ms="6173" started-at="2019-12-14T13:09:06Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-14T13:09:12Z">
+        <test-method status="FAIL" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@5442a311]" name="SearchResult" duration-ms="5953" started-at="2019-12-17T10:18:36Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-17T10:18:42Z">
           <params>
             <param index="0">
               <value>
@@ -148,10 +299,10 @@
   (Session info: chrome=78.0.3904.87)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'PF19GKQ2', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+System info: host: 'PF19GKQ2', ip: '172.30.202.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b83287f10782fef579820e244f38c97c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d71f9ee56a9e0c9c9934f346190bdef7
 *** Element info: {Using=xpath, value=//h2[@class='product-name']/a}]]>
             </message>
             <full-stacktrace>
@@ -159,15 +310,15 @@ Session ID: b83287f10782fef579820e244f38c97c
   (Session info: chrome=78.0.3904.87)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'PF19GKQ2', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+System info: host: 'PF19GKQ2', ip: '172.30.202.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b83287f10782fef579820e244f38c97c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d71f9ee56a9e0c9c9934f346190bdef7
 *** Element info: {Using=xpath, value=//h2[@class='product-name']/a}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -184,9 +335,9 @@ at com.sun.proxy.$Proxy11.getText(Unknown Source)
 at pageObjects.searchPage.getProductName(searchPage.java:60)
 at TestSteps.TestCase1.SearchResult(TestCase1.java:58)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -214,7 +365,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchResult -->
-        <test-method status="FAIL" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="SearchResult" duration-ms="5597" started-at="2019-12-14T13:09:12Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-14T13:09:18Z">
+        <test-method status="FAIL" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@5442a311]" name="SearchResult" duration-ms="5782" started-at="2019-12-17T10:18:42Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-17T10:18:48Z">
           <params>
             <param index="0">
               <value>
@@ -233,7 +384,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="3">
               <value>
-                <![CDATA[฿74.0]]>
+                <![CDATA[฿74.00]]>
               </value>
             </param>
           </params>
@@ -243,10 +394,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
   (Session info: chrome=78.0.3904.87)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'PF19GKQ2', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+System info: host: 'PF19GKQ2', ip: '172.30.202.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b83287f10782fef579820e244f38c97c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d71f9ee56a9e0c9c9934f346190bdef7
 *** Element info: {Using=xpath, value=//h2[@class='product-name']/a}]]>
             </message>
             <full-stacktrace>
@@ -254,15 +405,15 @@ Session ID: b83287f10782fef579820e244f38c97c
   (Session info: chrome=78.0.3904.87)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'PF19GKQ2', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+System info: host: 'PF19GKQ2', ip: '172.30.202.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b83287f10782fef579820e244f38c97c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d71f9ee56a9e0c9c9934f346190bdef7
 *** Element info: {Using=xpath, value=//h2[@class='product-name']/a}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -279,9 +430,9 @@ at com.sun.proxy.$Proxy11.getText(Unknown Source)
 at pageObjects.searchPage.getProductName(searchPage.java:60)
 at TestSteps.TestCase1.SearchResult(TestCase1.java:58)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -309,7 +460,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchResult -->
-        <test-method status="FAIL" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="SearchResult" duration-ms="5436" started-at="2019-12-14T13:09:18Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-14T13:09:23Z">
+        <test-method status="FAIL" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@5442a311]" name="SearchResult" duration-ms="5544" started-at="2019-12-17T10:18:48Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-17T10:18:54Z">
           <params>
             <param index="0">
               <value>
@@ -338,10 +489,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
   (Session info: chrome=78.0.3904.87)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'PF19GKQ2', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+System info: host: 'PF19GKQ2', ip: '172.30.202.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b83287f10782fef579820e244f38c97c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d71f9ee56a9e0c9c9934f346190bdef7
 *** Element info: {Using=xpath, value=//h2[@class='product-name']/a}]]>
             </message>
             <full-stacktrace>
@@ -349,15 +500,15 @@ Session ID: b83287f10782fef579820e244f38c97c
   (Session info: chrome=78.0.3904.87)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'PF19GKQ2', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+System info: host: 'PF19GKQ2', ip: '172.30.202.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b83287f10782fef579820e244f38c97c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58636}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d71f9ee56a9e0c9c9934f346190bdef7
 *** Element info: {Using=xpath, value=//h2[@class='product-name']/a}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -374,9 +525,9 @@ at com.sun.proxy.$Proxy11.getText(Unknown Source)
 at pageObjects.searchPage.getProductName(searchPage.java:60)
 at TestSteps.TestCase1.SearchResult(TestCase1.java:58)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -404,7 +555,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchResult -->
-        <test-method status="PASS" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="SearchResult" duration-ms="5191" started-at="2019-12-14T13:09:23Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-14T13:09:28Z">
+        <test-method status="PASS" signature="SearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSteps.TestCase1@5442a311]" name="SearchResult" duration-ms="5573" started-at="2019-12-17T10:18:54Z" data-provider="ProductData" depends-on-methods="TestSteps.TestCase1.openURL" finished-at="2019-12-17T10:18:59Z">
           <params>
             <param index="0">
               <value>
@@ -430,11 +581,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchResult -->
-        <test-method status="PASS" signature="endSetup()[pri:0, instance:TestSteps.TestCase1@1a968a59]" name="endSetup" is-config="true" duration-ms="891" started-at="2019-12-14T13:09:28Z" finished-at="2019-12-14T13:09:29Z">
+        <test-method status="PASS" signature="endSetup()[pri:0, instance:TestSteps.TestCase1@5442a311]" name="endSetup" is-config="true" duration-ms="825" started-at="2019-12-17T10:18:59Z" finished-at="2019-12-17T10:19:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSetup -->
       </class> <!-- TestSteps.TestCase1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

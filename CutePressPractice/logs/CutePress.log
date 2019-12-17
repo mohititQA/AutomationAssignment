@@ -1,140 +1,26 @@
-2019-12-14 18:26:30 INFO  CutePressDemo:53 - ****** Launching the chrome browser ****************
-2019-12-14 18:26:33 INFO  CutePressDemo:41 - ****** Opening the URL ****************
-2019-12-14 18:26:49 INFO  CutePressDemo:53 - 74705: We are searching for the this SKUCode.
-2019-12-14 18:26:49 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:26:54 INFO  CutePressDemo:60 - 
-2019-12-14 18:26:54 INFO  CutePressDemo:61 - No Product is available for this SKU.
-2019-12-14 18:26:54 INFO  CutePressDemo:53 - 74533: We are searching for the this SKUCode.
-2019-12-14 18:26:54 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:27:00 INFO  CutePressDemo:65 - ROSE GOLD EDITION ANGLE BRUSH
-2019-12-14 18:27:00 INFO  CutePressDemo:66 - $18
-2019-12-14 18:27:00 INFO  CutePressDemo:53 - 74535: We are searching for the this SKUCode.
-2019-12-14 18:27:00 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:27:05 INFO  CutePressDemo:65 - ROSE GOLD EDITION BLENDING BRUSH
-2019-12-14 18:27:05 INFO  CutePressDemo:66 - $8
-2019-12-14 18:27:06 INFO  CutePressDemo:53 - 74536: We are searching for the this SKUCode.
-2019-12-14 18:27:06 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:27:11 INFO  CutePressDemo:65 - ROSE GOLD EDITION PENCIL BRUSH
-2019-12-14 18:27:11 INFO  CutePressDemo:66 - $5
-2019-12-14 18:27:11 INFO  CutePressDemo:53 - 74936: We are searching for the this SKUCode.
-2019-12-14 18:27:11 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:27:16 INFO  CutePressDemo:53 - 74987: We are searching for the this SKUCode.
-2019-12-14 18:27:16 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:27:21 INFO  CutePressDemo:53 - 74777: We are searching for the this SKUCode.
-2019-12-14 18:27:21 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:27:26 INFO  CutePressDemo:53 - 70286: We are searching for the this SKUCode.
-2019-12-14 18:27:26 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:27:32 INFO  CutePressDemo:60 - 
-2019-12-14 18:27:32 INFO  CutePressDemo:61 - No Product is available for this SKU.
-2019-12-14 18:28:14 INFO  CutePressDemo:53 - ****** Launching the chrome browser ****************
-2019-12-14 18:28:17 INFO  CutePressDemo:41 - ****** Opening the URL ****************
-2019-12-14 18:28:34 INFO  CutePressDemo:53 - 74705: We are searching for the this SKUCode.
-2019-12-14 18:28:35 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:28:40 INFO  CutePressDemo:60 - 
-2019-12-14 18:28:40 INFO  CutePressDemo:61 - No Product is available for this SKU.
-2019-12-14 18:28:40 INFO  CutePressDemo:53 - 74533: We are searching for the this SKUCode.
-2019-12-14 18:28:40 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:28:46 INFO  CutePressDemo:65 - ROSE GOLD EDITION ANGLE BRUSH
-2019-12-14 18:28:46 INFO  CutePressDemo:66 - $18
-2019-12-14 18:28:46 INFO  CutePressDemo:53 - 74535: We are searching for the this SKUCode.
-2019-12-14 18:28:46 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:28:51 INFO  CutePressDemo:65 - ROSE GOLD EDITION BLENDING BRUSH
-2019-12-14 18:28:51 INFO  CutePressDemo:66 - $8
-2019-12-14 18:28:51 INFO  CutePressDemo:53 - 74536: We are searching for the this SKUCode.
-2019-12-14 18:28:52 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:28:57 INFO  CutePressDemo:65 - ROSE GOLD EDITION PENCIL BRUSH
-2019-12-14 18:28:57 INFO  CutePressDemo:66 - $5
-2019-12-14 18:28:57 INFO  CutePressDemo:53 - 74936: We are searching for the this SKUCode.
-2019-12-14 18:28:57 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:29:02 INFO  CutePressDemo:53 - 74987: We are searching for the this SKUCode.
-2019-12-14 18:29:02 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:29:08 INFO  CutePressDemo:53 - 74777: We are searching for the this SKUCode.
-2019-12-14 18:29:08 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:29:13 INFO  CutePressDemo:53 - 70286: We are searching for the this SKUCode.
-2019-12-14 18:29:13 INFO  CutePressDemo:55 - click on the search button.
-2019-12-14 18:29:18 INFO  CutePressDemo:60 - 
-2019-12-14 18:29:18 INFO  CutePressDemo:61 - No Product is available for this SKU.
-2019-12-14 18:34:24 INFO  CutePressDemo:53 - ****** Launching the chrome browser ****************
-2019-12-14 18:34:27 INFO  CutePressDemo:34 - ****** Opening the URL ****************
-2019-12-14 18:34:41 INFO  CutePressDemo:46 - 74705: We are searching for the this SKUCode.
-2019-12-14 18:34:42 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:34:47 INFO  CutePressDemo:53 - 
-2019-12-14 18:34:47 INFO  CutePressDemo:54 - No Product is available for this SKU.
-2019-12-14 18:34:47 INFO  CutePressDemo:46 - 74533: We are searching for the this SKUCode.
-2019-12-14 18:34:47 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:34:53 INFO  CutePressDemo:58 - ROSE GOLD EDITION ANGLE BRUSH
-2019-12-14 18:34:53 INFO  CutePressDemo:59 - $18
-2019-12-14 18:34:53 INFO  CutePressDemo:46 - 74535: We are searching for the this SKUCode.
-2019-12-14 18:34:53 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:34:58 INFO  CutePressDemo:58 - ROSE GOLD EDITION BLENDING BRUSH
-2019-12-14 18:34:58 INFO  CutePressDemo:59 - $8
-2019-12-14 18:34:58 INFO  CutePressDemo:46 - 74536: We are searching for the this SKUCode.
-2019-12-14 18:34:58 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:35:04 INFO  CutePressDemo:58 - ROSE GOLD EDITION PENCIL BRUSH
-2019-12-14 18:35:04 INFO  CutePressDemo:59 - $5
-2019-12-14 18:35:04 INFO  CutePressDemo:46 - 74936: We are searching for the this SKUCode.
-2019-12-14 18:35:04 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:35:09 INFO  CutePressDemo:46 - 74987: We are searching for the this SKUCode.
-2019-12-14 18:35:09 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:35:14 INFO  CutePressDemo:46 - 74777: We are searching for the this SKUCode.
-2019-12-14 18:35:14 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:35:19 INFO  CutePressDemo:46 - 70286: We are searching for the this SKUCode.
-2019-12-14 18:35:19 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:35:26 INFO  CutePressDemo:53 - 
-2019-12-14 18:35:26 INFO  CutePressDemo:54 - No Product is available for this SKU.
-2019-12-14 18:36:59 INFO  CutePressDemo:49 - ****** Launching the chrome browser ****************
-2019-12-14 18:37:02 INFO  CutePressDemo:34 - ****** Opening the URL ****************
-2019-12-14 18:37:18 INFO  CutePressDemo:46 - 74705: We are searching for the this SKUCode.
-2019-12-14 18:37:18 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:37:26 INFO  CutePressDemo:53 - 
-2019-12-14 18:37:26 INFO  CutePressDemo:54 - No Product is available for this SKU.
-2019-12-14 18:37:26 INFO  CutePressDemo:46 - 74533: We are searching for the this SKUCode.
-2019-12-14 18:37:26 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:37:31 INFO  CutePressDemo:58 - ROSE GOLD EDITION ANGLE BRUSH
-2019-12-14 18:37:31 INFO  CutePressDemo:59 - $18
-2019-12-14 18:37:31 INFO  CutePressDemo:46 - 74535: We are searching for the this SKUCode.
-2019-12-14 18:37:31 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:37:37 INFO  CutePressDemo:58 - ROSE GOLD EDITION BLENDING BRUSH
-2019-12-14 18:37:37 INFO  CutePressDemo:59 - $8
-2019-12-14 18:37:37 INFO  CutePressDemo:46 - 74536: We are searching for the this SKUCode.
-2019-12-14 18:37:37 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:37:42 INFO  CutePressDemo:58 - ROSE GOLD EDITION PENCIL BRUSH
-2019-12-14 18:37:42 INFO  CutePressDemo:59 - $5
-2019-12-14 18:37:42 INFO  CutePressDemo:46 - 74936: We are searching for the this SKUCode.
-2019-12-14 18:37:42 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:37:48 INFO  CutePressDemo:46 - 74987: We are searching for the this SKUCode.
-2019-12-14 18:37:48 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:37:53 INFO  CutePressDemo:46 - 74777: We are searching for the this SKUCode.
-2019-12-14 18:37:53 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:37:58 INFO  CutePressDemo:46 - 70286: We are searching for the this SKUCode.
-2019-12-14 18:37:58 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:38:03 INFO  CutePressDemo:53 - 
-2019-12-14 18:38:03 INFO  CutePressDemo:54 - No Product is available for this SKU.
-2019-12-14 18:38:21 INFO  CutePressDemo:49 - ****** Launching the chrome browser ****************
-2019-12-14 18:38:25 INFO  CutePressDemo:34 - ****** Opening the URL ****************
-2019-12-14 18:38:43 INFO  CutePressDemo:46 - 74705: We are searching for the this SKUCode.
-2019-12-14 18:38:43 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:38:48 INFO  CutePressDemo:53 - 
-2019-12-14 18:38:48 INFO  CutePressDemo:54 - No Product is available for this SKU.
-2019-12-14 18:38:48 INFO  CutePressDemo:46 - 74533: We are searching for the this SKUCode.
-2019-12-14 18:38:49 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:38:54 INFO  CutePressDemo:58 - ROSE GOLD EDITION ANGLE BRUSH
-2019-12-14 18:38:54 INFO  CutePressDemo:59 - $18
-2019-12-14 18:38:55 INFO  CutePressDemo:46 - 74535: We are searching for the this SKUCode.
-2019-12-14 18:38:55 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:39:00 INFO  CutePressDemo:58 - ROSE GOLD EDITION BLENDING BRUSH
-2019-12-14 18:39:00 INFO  CutePressDemo:59 - $8
-2019-12-14 18:39:00 INFO  CutePressDemo:46 - 74536: We are searching for the this SKUCode.
-2019-12-14 18:39:00 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:39:06 INFO  CutePressDemo:58 - ROSE GOLD EDITION PENCIL BRUSH
-2019-12-14 18:39:06 INFO  CutePressDemo:59 - $5
-2019-12-14 18:39:06 INFO  CutePressDemo:46 - 74936: We are searching for the this SKUCode.
-2019-12-14 18:39:06 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:39:12 INFO  CutePressDemo:46 - 74987: We are searching for the this SKUCode.
-2019-12-14 18:39:12 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:39:18 INFO  CutePressDemo:46 - 74777: We are searching for the this SKUCode.
-2019-12-14 18:39:18 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:39:23 INFO  CutePressDemo:46 - 70286: We are searching for the this SKUCode.
-2019-12-14 18:39:23 INFO  CutePressDemo:48 - click on the search button.
-2019-12-14 18:39:28 INFO  CutePressDemo:53 - 
-2019-12-14 18:39:28 INFO  CutePressDemo:54 - No Product is available for this SKU.
+2019-12-17 16:03:30 INFO  CutePressDemo:51 - ****** Launching the chrome browser ****************
+2019-12-17 16:03:33 INFO  CutePressDemo:34 - ****** Opening the URL ****************
+2019-12-17 16:03:51 INFO  CutePressDemo:46 - 74705: We are searching for the this SKUCode.
+2019-12-17 16:03:51 INFO  CutePressDemo:48 - click on the search button.
+2019-12-17 16:03:57 INFO  CutePressDemo:53 - 
+2019-12-17 16:03:57 INFO  CutePressDemo:54 - No Product is available for this SKU.
+2019-12-17 16:03:57 INFO  CutePressDemo:46 - 70286: We are searching for the this SKUCode.
+2019-12-17 16:03:57 INFO  CutePressDemo:48 - click on the search button.
+2019-12-17 16:04:02 INFO  CutePressDemo:46 - 74535: We are searching for the this SKUCode.
+2019-12-17 16:04:02 INFO  CutePressDemo:48 - click on the search button.
+2019-12-17 16:04:08 INFO  CutePressDemo:58 - ROSE GOLD EDITION BLENDING BRUSH
+2019-12-17 16:04:08 INFO  CutePressDemo:59 - $8
+2019-12-17 16:04:08 INFO  CutePressDemo:46 - 74536: We are searching for the this SKUCode.
+2019-12-17 16:04:08 INFO  CutePressDemo:48 - click on the search button.
+2019-12-17 16:04:14 INFO  CutePressDemo:58 - ROSE GOLD EDITION PENCIL BRUSH
+2019-12-17 16:04:14 INFO  CutePressDemo:59 - $5
+2019-12-17 16:04:14 INFO  CutePressDemo:46 - 74936: We are searching for the this SKUCode.
+2019-12-17 16:04:14 INFO  CutePressDemo:48 - click on the search button.
+2019-12-17 16:04:19 INFO  CutePressDemo:46 - 74987: We are searching for the this SKUCode.
+2019-12-17 16:04:19 INFO  CutePressDemo:48 - click on the search button.
+2019-12-17 16:04:24 INFO  CutePressDemo:46 - 74777: We are searching for the this SKUCode.
+2019-12-17 16:04:24 INFO  CutePressDemo:48 - click on the search button.
+2019-12-17 16:04:29 INFO  CutePressDemo:46 - 70286: We are searching for the this SKUCode.
+2019-12-17 16:04:29 INFO  CutePressDemo:48 - click on the search button.
+2019-12-17 16:04:34 INFO  CutePressDemo:53 - 
+2019-12-17 16:04:34 INFO  CutePressDemo:54 - No Product is available for this SKU.
