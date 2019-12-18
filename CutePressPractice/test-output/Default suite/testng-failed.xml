@@ -5,8 +5,9 @@
     <classes>
       <class name="TestSteps.TestCase2">
         <methods>
-          <include name="ProductSearchResult"/>
-          <include name="setUp"/>
+          <include name="openURL"/>
+          <include name="ProductSearchResult" invocation-numbers="1"/>
+          <include name="endSetup"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- TestSteps.TestCase2 -->
