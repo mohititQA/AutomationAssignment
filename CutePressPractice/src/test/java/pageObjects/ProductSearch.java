@@ -1,7 +1,10 @@
 package pageObjects;
 
+import java.io.IOException;
+import java.util.List;
 import java.util.Set;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,24 +13,33 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.DataProvider;
 
-public class ProductSearch {
+import SetupClasses.BaseClass;
+import SetupClasses.XlUtilits;
+
+public class ProductSearch extends BaseClass {
 	
 	WebDriver ldriver;
+	WebDriverWait wait;
 	public ProductSearch(WebDriver rdriver)
 	{
 		ldriver=rdriver;
     	PageFactory.initElements(rdriver,this);
+    	 wait = new WebDriverWait(ldriver,30);
 	}
     
-	@FindBy(how=How.XPATH,using = "//*[@name='q']")
+	@FindBy(how=How.XPATH,using = "//input[@name='q']")
     @CacheLookup
     WebElement serachTextBox;
 	
-	@FindBy(how=How.XPATH,using = "//button[@class='vh79eN']")
+	@FindBy(how=How.XPATH,using = "//button[@class='button']")
     @CacheLookup
     WebElement searchButton;
 	
+	/*
 	@FindBy(how=How.XPATH,using = "//input[@class='_2zrpKA _1dBPDZ']")
     @CacheLookup
     WebElement userName;
@@ -40,18 +52,29 @@ public class ProductSearch {
     @CacheLookup
     WebElement loginButton;
 	
+	*/
 	
-	@FindBy(how=How.XPATH,using = "(//div[1]/div/div/img)[1]")
+	//@FindBy(xpath =  "//a[text()='"+productName+"']")
     @CacheLookup
     WebElement firstProduct;
 	
+	/*
 	@FindBy(how=How.XPATH,using = "//button[@class='_2AkmmA _2Npkh4 _2MWPVK']")
     @CacheLookup
     WebElement gotoCartButton;
 	
-	@FindBy(how=How.XPATH,using = "//button[@class='_2AkmmA _2Npkh4 _2MWPVK']")
+	*/
+	@FindBy(how=How.XPATH,using = "//button[@class='button btn-cart']//span/i")
     @CacheLookup
     WebElement addCartButton;
+	
+	@FindBy(how=How.XPATH,using = "//img[@class='cart-img']")
+    @CacheLookup
+	WebElement viewCartOption;
+	
+	@FindBy(how=How.XPATH,using = "//a/i[@class='icon-basket']/..")
+	@CacheLookup
+	WebElement ViewCartButton; 
 	
 	@FindBy(how=How.XPATH,using = "(//div[@class='hJYgKM']//span)[1]")
     @CacheLookup
@@ -73,39 +96,78 @@ public class ProductSearch {
     @CacheLookup
     WebElement quantity;
 	
-	@FindBy(how=How.XPATH,using = "(//div[@class='gdUKd9'])[2]")
+	/*@FindBy(how=How.XPATH,using = "(//div[@class='gdUKd9'])[2]")
     @CacheLookup
     WebElement removeButton;
-	
-	@FindBy(how=How.XPATH,using = "(//div[@class='gdUKd9 _3Z4XMp _2nQDKB'])")
+*/
+	@FindBy(how=How.XPATH,using = "//button[@class='button btn-empty']")
     @CacheLookup
     WebElement removebutton;
 	
+	@FindBy(how=How.XPATH,using = "//table[@id='shopping-cart-table']//tbody")
+    @CacheLookup
+    WebElement shoppingCartTable;
+	
+	@FindBy(how=How.XPATH,using = "//table[@id='shopping-cart-table']//tbody/tr")
+    @CacheLookup
+    WebElement tableRows;
 	
 	//functions required for the test case
-	public void enterSKUCode(String product) throws InterruptedException
+	public void enterSKUCode(String productName) throws InterruptedException, IOException
 	{
-		//closeButton.click();
+		if(productName.equals("Ultimate Renewal Revitalising Night Cream"))
+		{	
+						
+			//wait.until(ExpectedConditions.presenceOfElementLocated((By) serachTextBox));
+
+				try{
+				    serachTextBox.clear();
+					System.out.println(productName);
+					serachTextBox.sendKeys(productName);
+					searchButton.click();
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='"+productName+"']")));
+					ldriver.findElement(By.xpath("//a[text()='"+productName+"']")).click();
+					wait.until(ExpectedConditions.presenceOfElementLocated((By) addCartButton));	
+					addCartButton.click();	
+				
+				}
+				catch(Exception e)
+				   {
+					    serachTextBox = ldriver.findElement(By.xpath("//input[@class='input-text']"));
+					    serachTextBox.clear();
+						serachTextBox.sendKeys(productName);
+						searchButton = ldriver.findElement(By.xpath("//button[@class='button']"));
+						searchButton.click();
+						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='"+productName+"']")));
+						ldriver.findElement(By.xpath("//a[text()='"+productName+"']")).click();
+						addCartButton = ldriver.findElement(By.xpath("//button[@class='button btn-cart']//span/i"));
+						//wait.until(ExpectedConditions.presenceOfElementLocated((By) addCartButton));	
+						addCartButton.click();
+						Thread.sleep(3000);
+				   		
 	
+				   }
 			
-		serachTextBox.clear();
-		serachTextBox.sendKeys(product);
-		searchButton.click();
-		Thread.sleep(4000);
-		firstProduct.click();
-		Thread.sleep(2000);
-		Set<String> allWindowHandles = ldriver.getWindowHandles();
-		for(String handle:allWindowHandles)
-		{
-			ldriver.switchTo().window(handle);
 		}
-		addCartButton.click();
-		Thread.sleep(2000);
 		
+		else
+		{
+			serachTextBox.clear();
+			System.out.println(productName);
+			serachTextBox.sendKeys(productName);
+			searchButton.click();
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='"+productName+"']")));
+			ldriver.findElement(By.xpath("//a[text()='"+productName+"']")).click();
+			
+			addCartButton.click();
+			Thread.sleep(3000);
+			//navigatetoBack();
+		}
+								
 	}
 	
 	
-	public void LoginInApplication() throws InterruptedException
+	/*public void LoginInApplication() throws InterruptedException
 	{
 		userName.sendKeys("mohitit09@gmail.com");
 		passWord.sendKeys("Password$123");
@@ -114,7 +176,7 @@ public class ProductSearch {
 		enterSKUCode("Flipkart SmartBuy Military Keychain with Torch, Screwdriver, Knife & Bottle Opener Key Chain");
 	}
 	
-	
+	*/
 	public void clickOnQuantity(String qty) throws InterruptedException
 	{
 			
@@ -147,8 +209,43 @@ public class ProductSearch {
 		
 	public void clickRemoveButton()
 	{
-		removeButton.click();
+		//removeButton.click();
 		removebutton.click();
 	}
+
+public void navigatetoBack()
+{
+	ldriver.navigate().back();
+	ldriver.navigate().back();
+	ldriver.navigate().refresh();
+}
+	
+
+	public void clickOnCart()
+	{
+		viewCartOption.click();
+		ViewCartButton.click();
+		
+	}
+	
+	public void tableData()
+	 {
+		//No. of Columns
+		String text="";
+        List<WebElement>  rows = ldriver.findElements(By.xpath("//table[@id='shopping-cart-table']//tbody/tr"));
+        List<WebElement>  cols = ldriver.findElements(By.xpath("//table[@id='shopping-cart-table']//tbody/tr[1]/td"));
+        for(int i =1;i<=rows.size();i++)
+        	for(int j =1;j<=cols.size();j++)
+        	{
+        		
+				if(j>2 && j!=5)
+				{
+        			 text = ldriver.findElement(By.xpath("//table[@id='shopping-cart-table']//tbody/tr["+i+"]/td["+j+"]")).getText();
+				     logger.info("*******************************************************");
+				     logger.info(text);
+				}
+        	}
+	 }
+	
 }
 

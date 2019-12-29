@@ -6,7 +6,8 @@
       <class name="TestSteps.TestCase2">
         <methods>
           <include name="openURL"/>
-          <include name="ProductSearchResult" invocation-numbers="1"/>
+          <include name="ProductSearchResult"/>
+          <include name="viewCartAndVerifyPrice"/>
           <include name="endSetup"/>
           <include name="Setup"/>
         </methods>

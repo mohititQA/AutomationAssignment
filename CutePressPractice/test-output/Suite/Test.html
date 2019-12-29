@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 17 16:41:05 IST 2019</td>
+<td>Started on:</td><td>Sun Dec 29 08:03:50 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12453 ms)</td>
+<tr><td>Total time:</td><td>45 seconds (45459 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,41 +75,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestSteps.TestCase2.ProductSearchResult()'><b>ProductSearchResult</b><br>Test class: TestSteps.TestCase2</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;modalDialog&apos;]/button&quot;}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td title='TestSteps.TestCase2.viewCartAndVerifyPrice()'><b>viewCartAndVerifyPrice</b><br>Test class: TestSteps.TestCase2</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;btn btn-default&quot; href=&quot;https://www.orientalprincess.com/worldwide.php/checkout/cart/&quot;&gt; could not be scrolled into view
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;PF19GKQ2&apos;, ip: &apos;172.30.202.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adee4e50c57219417beb2e556b7163bb
-*** Element info: {Using=xpath, value=//*[@id=&apos;modalDialog&apos;]/button}
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 15172, moz:profile: C:\Users\mmn7455\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5c35f09b-7d97-4b48-b1e1-6ed71c7a89f7
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at pageObjects.ProductSearch.enterSKUCode(ProductSearch.java:31)
-	at TestSteps.TestCase2.ProductSearchResult(TestCase2.java:24)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace105579928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace105579928'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;modalDialog&apos;]/button&quot;}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at pageObjects.ProductSearch.clickOnCart(ProductSearch.java:227)
+	at TestSteps.TestCase2.viewCartAndVerifyPrice(TestCase2.java:44)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1594039997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594039997'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;btn btn-default&quot; href=&quot;https://www.orientalprincess.com/worldwide.php/checkout/cart/&quot;&gt; could not be scrolled into view
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;PF19GKQ2&apos;, ip: &apos;172.30.202.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\mmn7455\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adee4e50c57219417beb2e556b7163bb
-*** Element info: {Using=xpath, value=//*[@id=&apos;modalDialog&apos;]/button}
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 15172, moz:profile: C:\Users\mmn7455\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5c35f09b-7d97-4b48-b1e1-6ed71c7a89f7
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -120,15 +111,16 @@ Session ID: adee4e50c57219417beb2e556b7163bb
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at pageObjects.ProductSearch.enterSKUCode(ProductSearch.java:31)
-	at TestSteps.TestCase2.ProductSearchResult(TestCase2.java:24)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at pageObjects.ProductSearch.clickOnCart(ProductSearch.java:227)
+	at TestSteps.TestCase2.viewCartAndVerifyPrice(TestCase2.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -155,8 +147,31 @@ Session ID: adee4e50c57219417beb2e556b7163bb
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
+<td>0</td>
+<td>TestSteps.TestCase2@5442a311</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestSteps.TestCase2.ProductSearchResult()'><b>ProductSearchResult</b><br>Test class: TestSteps.TestCase2<br>Parameters: 1, $86.00, $86.00, Ultimate Renewal Premium Set</td>
+<td></td>
+<td>7</td>
+<td>TestSteps.TestCase2@5442a311</td></tr>
+<tr>
+<td title='TestSteps.TestCase2.ProductSearchResult()'><b>ProductSearchResult</b><br>Test class: TestSteps.TestCase2<br>Parameters: 1, $87.00, $87.00, Ultimate Renewal Revitalising Night Cream</td>
+<td></td>
 <td>8</td>
-<td>TestSteps.TestCase2@343f4d3d</td></tr>
+<td>TestSteps.TestCase2@5442a311</td></tr>
+<tr>
+<td title='TestSteps.TestCase2.openURL()'><b>openURL</b><br>Test class: TestSteps.TestCase2</td>
+<td></td>
+<td>14</td>
+<td>TestSteps.TestCase2@5442a311</td></tr>
 </table><p>
 </body>
 </html>

@@ -21,63 +21,29 @@ public class TestCase2 extends BaseClass {
 		logger.info("****** Opening the URL ****************");
 		driver.get(super.newURL);
 		driver.manage().window().maximize();
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		ps  = new ProductSearch(driver);
 		
-		 ps.LoginInApplication();
+		// ps.LoginInApplication();
 		
 	}
    
     
 	@Test(dataProvider="ProductData",dependsOnMethods = { "openURL" })
-	public void ProductSearchResult(String quantity,String price,String deliveryFee, String Totalfee) throws InterruptedException
+	public void ProductSearchResult(String quantity,String price, String Totalfee, String productName) throws InterruptedException, IOException
 	{
-		logger.info("Entering the quantity : " + quantity);
-		if (Integer.parseInt(quantity)>1)
-		{		
-		   ps.clickOnQuantity(quantity);
-		   for(int i=0;i<=3;i++)
-
-		   {
-
-		   	try{
-
-		   		logger.info("Entering the quantity : " + price);
-				 Assert.assertEquals(ps.getProductPrice(),price);
-				 
-				 logger.info("Entering the quantity : " + deliveryFee);
-				 Assert.assertEquals(ps.getDeliveryFee(),deliveryFee);
-				 
-				 logger.info("Entering the quantity : " + Totalfee);
-				 Assert.assertEquals(ps.getTotalPrice1(),Totalfee);
-
-		   		break;
-		   	}
-
-		   catch(Exception e)
-		   {
-
-		   	System.out.println("Exception-Element not found");
-
-		   }
-		   
-		   }
-		   
-		}
-		else{
-		 logger.info("Entering the quantity : " + price);
-		 Assert.assertEquals(ps.getProductPrice(),price);
-		 
-		 logger.info("Entering the quantity : " + deliveryFee);
-		 Assert.assertEquals(ps.getDeliveryFee(),deliveryFee);
-		 
-		 logger.info("Entering the quantity : " + Totalfee);
-		 Assert.assertEquals(ps.getTotalPrice(),Totalfee);
-		} 
+		logger.info("Entering the Product Name : " + productName);
+		ps.enterSKUCode(productName);
 		 
 	}
 	
 	
+	@Test(dependsOnMethods = { "ProductSearchResult" })
+	public void viewCartAndVerifyPrice()
+	{
+		ps.clickOnCart();
+		ps.tableData();
+	}
 	
 	@DataProvider(name="ProductData")
 	String[][] requireProductData() throws IOException
@@ -103,8 +69,6 @@ public class TestCase2 extends BaseClass {
 	@AfterTest
 	public void endSetup() 
 	{
-		ps  = new ProductSearch(driver);
-		ps.clickRemoveButton();
 		driver.quit();
 	}
 	

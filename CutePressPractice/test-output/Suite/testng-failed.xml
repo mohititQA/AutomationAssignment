@@ -5,7 +5,9 @@
     <classes>
       <class name="TestSteps.TestCase2">
         <methods>
+          <include name="openURL"/>
           <include name="ProductSearchResult"/>
+          <include name="viewCartAndVerifyPrice"/>
           <include name="endSetup"/>
           <include name="Setup"/>
         </methods>
